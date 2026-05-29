@@ -42,7 +42,7 @@ function setStatus(target, text) {
 
 async function fetchShortJoke() {
   try {
-    const response = await fetch('https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit');
+    const response = await fetch('https://v2.jokeapi.dev/joke/Any?lang=fi&blacklistFlags=nsfw,religious,political,racist,sexist,explicit');
     if (!response.ok) throw new Error('Joke API request failed');
     const data = await response.json();
 
