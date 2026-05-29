@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Päivän vitsi? / Päivän säätiedot?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>Päivän vitsi vai sää?</h1>
+      <p class="intro">Valitse alta, mitä haluat nähdä. Molemmat tulokset näkyvät rinnakkain.</p>
+
+      <section class="button-row" aria-label="Toimintopainikkeet">
+        <button id="jokeBtn" class="action-btn" type="button">Päivän vitsi?</button>
+        <button id="weatherBtn" class="action-btn" type="button">Päivän säätiedot?</button>
+      </section>
+
+      <section class="output-grid" aria-live="polite">
+        <article class="panel">
+          <h2>Vitsi</h2>
+          <p id="jokeOutput" class="output-text">Paina nappia nähdäksesi päivän vitsin.</p>
+        </article>
+
+        <article class="panel">
+          <h2>Sää Mikkelissä</h2>
+          <p id="weatherOutput" class="output-text">Paina nappia nähdäksesi päivän säätiivistelmän.</p>
+        </article>
+      </section>
+
+      <button id="clearBtn" class="clear-btn" type="button">Clear</button>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
